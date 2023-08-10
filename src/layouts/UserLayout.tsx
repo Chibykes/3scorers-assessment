@@ -59,8 +59,8 @@ export default function UserLayout({ pageTitle, children }: LayoutTypes) {
           </div>
 
           <div className="">
-            <p className="font-semibold capitalize">{user?.data?.username}</p>
-            <p className="text-sm capitalize">{user?.data?.role}</p>
+            <p className="font-semibold capitalize">{user?.data?.firstName} {user?.data?.lastName}</p>
+            <p className="text-sm text-right capitalize">{user?.data?.role || "Adminstrator"}</p>
           </div>
         </nav>
 
